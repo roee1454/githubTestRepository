@@ -1,9 +1,12 @@
 import string, typing, time
 
 class Game:
-    def __init__(self, char, time_elapsed):
-        self.char = char
-        self.char = [_ for _ in string.ascii_letters]
-        self.time_elapsed = time_elapsed
+    def __init__(self):
+        self.chars = [_ for _ in list(string.ascii_lowercase)]
         self.time_elapsed  = time.time()
-        
+    def giveSentence(self):
+        for char in self.chars:
+            print(char)
+
+ai = Game()
+ai.giveSentence()
