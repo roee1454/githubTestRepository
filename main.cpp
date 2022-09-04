@@ -11,7 +11,6 @@ int main(){
 }
 std::string reversed(std::string str){
     std::string new_str;
-    std::cout<<str.length()<<std::endl;
     for (int i = str.length(); i>=0; i--){
         new_str.push_back(str[i]);
     }
