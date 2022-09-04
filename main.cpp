@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 std::string reversed(std::string);
 
@@ -13,9 +12,8 @@ int main(){
 std::string reversed(std::string str){
     std::string new_str;
     std::cout<<str.length()<<std::endl;
-    for (int i = str.length()-1; i>str.length(); i--){
-        char sch = str[i];
-        new_str.push_back(sch);
+    for (int i = str.length(); i>=0; i--){
+        new_str.push_back(str[i]);
     }
     return new_str;
 }
